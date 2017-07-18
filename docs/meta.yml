@@ -1,0 +1,62 @@
+name: Switch
+catalog: button
+tags:
+  en:
+    - switch
+    - toggle
+  zh:
+    - 開關
+    - 切換
+intro:
+  en: |
+    Writing some `Markdown` casually, such as `Switching Selector`.
+  zh-cmn: |
+    隨便寫點沒什麼用的 `Markdown`，例如 `開關選擇器`。
+  zh-wuu: |
+    隨意寫眼無沒用場箇 `Markdown`，譬如 `開關選擇器`。
+props:
+  checked:
+    type: Boolean
+    default: false
+    version: v1.0.0
+    en: |
+      determine whether the Switch is checked
+    zh-cmn: |
+      指明開關當前是否被選中
+    zh-wuu: |
+      話明這瑲裏開關有選中弗
+  disabled:
+    type: Boolean
+    default: false
+    version: next
+    en: |
+      will disable the switch if true
+    zh-cmn: |
+      如果爲真將禁用開關
+    zh-wuu: |
+      爲真箇話就禁用開關
+events:
+  change:
+    params: (value)
+    version: v1.0.0
+    en: |
+      triggers when the switch is toggled.
+    zh-cmn: |
+      切換開關時觸發
+    zh-wuu: |
+      切換開關箇辰光發作
+changes:
+  next:
+    en:
+      - '[change] default checked value is false, which is same as html specs'
+      - '[feature] add prop disabled'
+      - '[feature] add event change'
+    zh-CN:
+      - '[change] 默认 checked 值为 false, 与 html 规范一致'
+      - '[feature] 添加属性 disabled'
+      - '[feature] 添加事件 change'
+  v1.0.0:
+    en:
+      - '[feature] add component `Switch`'
+    zh-CN:
+      - '[feature] 添加組件 `Switch`'
