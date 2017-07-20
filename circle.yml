@@ -4,6 +4,8 @@ machine:
 
 dependencies:
   pre:
+    - sudo apt-get update
+    - sudo apt-get install chromium-chromedriver openjdk-8-jdk
     - nvm install 6
     - nvm install 7
     - nvm install 8
