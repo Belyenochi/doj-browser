@@ -151,7 +151,7 @@ Display:
   - [ ] sub: Corner
 - [ ] Calendar
 - [ ] Card
-   - [ ] sub: Segment 
+   - [ ] sub: Segment
 - [ ] Carousel
 - [ ] Table
 - [ ] Timeline
@@ -190,10 +190,11 @@ docute ./docs // 使用 docute 預覽文檔
 一條記錄的開頭，需要用一對中括號表示變更類型，類型如下：
 
  - `build`: 修改構建用的配置文件
- - `tslint`: 修改語法檢查的配置文件
+ - `eslint`: 修改語法檢查的配置文件
  - `docs`: 修改幫助文檔
  - `assets`: 修改資源文件
  - `fix`: 修復一處錯誤，例如修復文字提示、修復未捕捉的異常
- - `enhance`: 改善一處體驗，例如增強魯棒性、美化組件樣式
+ - `enhance`: 改善一處體驗，例如增強魯棒性
  - `feature`: 增加一個特性，例如增加組件、屬性、事件、功能等
  - `change`: 改變一個行爲，例如調整組件的接口、改變組件內部的實現
+ - `styles`: 改變一處樣式，例如美化組件樣式
