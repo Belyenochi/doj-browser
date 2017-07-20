@@ -1,4 +1,16 @@
 
+/**
+ * jp: 日本の伝統色
+ * en: The Traditional Colors of Japan
+ * site: http://nipponcolors.com/
+ *
+ * Class color-[color-name]
+ *   Such as <span class=".color-nadeshiko"></span>
+ *
+ * Class bg-[color-name]
+*   Such as <span class=".bg-nadeshiko"></span>
+ */
+
 // 撫子
 @nadeshiko           : #dc9fb4;
 // 紅梅
@@ -753,21 +765,13 @@
   ro
 ;
 
-.nippon-color(@color) {
-  color: @@color;
-}
-
-.nippon-bg(@color) {
-  background-color: @@color;
-}
-
 .generate-nippon(@n, @i: 1) when (@i =< @n) {
-  @name: extract(@nippon-colors, @i);
-  .color-@{name} {
-    color: @@name;
+  @color-name: extract(@nippon-colors, @i);
+  .color-@{color-name} {
+    color: @@color-name;
   }
-  .bg-@{name} {
-    background-color: @@name;
+  .bg-@{color-name} {
+    background-color: @@color-name;
   }
   .generate-nippon(@n, @i + 1);
 }

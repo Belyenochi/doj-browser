@@ -1,4 +1,15 @@
 
+/**
+ * en: The Colors of Material Design
+ * site: https://material.io/guidelines/style/color.html
+ *
+ * Class color-[color-name]
+ *   Such as <span class=".color-amber-50"></span>
+ *
+ * Class bg-[color-name]
+ *   Such as <span class=".bg-amber-50"></span>
+ */
+
 @black               : #000000;
 @white               : #ffffff;
 @amber-50            : #fff8e1;
@@ -515,21 +526,13 @@
   yellow-a700
 ;
 
-.material-color(@color) {
-  color: @@color;
-}
-
-.material-bg(@color) {
-  background-color: @@color;
-}
-
 .generate-material(@n, @i: 1) when (@i =< @n) {
-  @name: extract(@material-colors, @i);
-  .color-@{name} {
-    color: @@name;
+  @color-name: extract(@material-colors, @i);
+  .color-@{color-name} {
+    color: @@color-name;
   }
-  .bg-@{name} {
-    background-color: @@name;
+  .bg-@{color-name} {
+    background-color: @@color-name;
   }
   .generate-material(@n, @i + 1);
 }
