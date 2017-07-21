@@ -1,0 +1,129 @@
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0px;
+  text-align: center;
+  z-index: 1000;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.loader:after {
+  position: absolute;
+  // top: 0%;
+  // left: 50%;
+  // width: 100%;
+  // height: 100%;
+  content: '';
+
+  animation: loader @loader-speed linear;
+  animation-iteration-count: infinite;
+
+  border-radius: 500rem;
+  border-color: @loader-border-color;
+  border-style: solid;
+  border-width: @loader-line-width;
+
+  box-shadow: 0px 0px 0px 1px transparent;
+}
+
+@keyframes loader {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Sizes */
+.loader {
+  &.mini {
+    width: @mini;
+    height: @mini;
+    font-size: @miniFontSize;
+    &:before, &:after {
+      width: @mini;
+      height: @mini;
+      margin: @miniOffset;
+    }
+  }
+
+  &.tiny {
+    width: @tiny;
+    height: @tiny;
+    font-size: @tinyFontSize;
+    &:before, &:after {
+      width: @tiny;
+      height: @tiny;
+      margin: @tinyOffset;
+    }
+  }
+
+  &.small {
+    width: @small;
+    height: @small;
+    font-size: @smallFontSize;
+    &:before, &:after {
+      width: @small;
+      height: @small;
+      margin: @smallOffset;
+    }
+  }
+
+  & {
+    width: @medium;
+    height: @medium;
+    font-size: @mediumFontSize;
+    &:before, &:after {
+      width: @medium;
+      height: @medium;
+      margin: @mediumOffset;
+    }
+  }
+
+  &.large {
+    width: @large;
+    height: @large;
+    font-size: @largeFontSize;
+    &:before, &:after {
+      width: @large;
+      height: @large;
+      margin: @largeOffset;
+    }
+  }
+
+  &.big {
+    width: @big;
+    height: @big;
+    font-size: @bigFontSize;
+    &:before, &:after {
+      width: @big;
+      height: @big;
+      margin: @bigOffset;
+    }
+  }
+
+  &.huge {
+    width: @huge;
+    height: @huge;
+    font-size: @hugeFontSize;
+    &:before, &:after {
+      width: @huge;
+      height: @huge;
+      margin: @hugeOffset;
+    }
+  }
+
+  &.massive {
+    width: @massive;
+    height: @massive;
+    font-size: @massiveFontSize;
+    &:before, &:after {
+      width: @massive;
+      height: @massive;
+      margin: @massiveOffset;
+    }
+  }
+}

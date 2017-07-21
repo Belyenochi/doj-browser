@@ -22,6 +22,7 @@
 General: <!-- TBD -->
 
 - [ ] Loader
+  - [ ] mode: inverse
 - [ ] Icon
 - [ ] Button
   - [ ] sub: Group
