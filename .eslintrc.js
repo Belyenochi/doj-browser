@@ -25,12 +25,14 @@ module.exports = {
     'generator-star-spacing': 0,
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
-    "comma-dangle": ["error", {
-      "arrays": "ignore",
-      "objects": "ignore",
-      "imports": "ignore",
-      "exports": "ignore",
-      "functions": "ignore",
+    'comma-dangle': ['error', {
+      'arrays': 'ignore',
+      'objects': 'ignore',
+      'imports': 'ignore',
+      'exports': 'ignore',
+      'functions': 'ignore',
     }],
+    // disallow camel-case
+    'camelcase': ['off'],
   }
 }
