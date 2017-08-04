@@ -32,7 +32,5 @@ module.exports = {
       'exports': 'ignore',
       'functions': 'ignore',
     }],
-    // disallow camel-case
-    'camelcase': ['off'],
   }
 }

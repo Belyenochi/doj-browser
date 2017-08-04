@@ -1,0 +1,50 @@
+
+.loader {
+  // 處於父元素箇正中央
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+  margin: 0px;
+  min-width: 100%;
+  z-index: 1000;
+}
+
+.loader-icon {
+  // 水平居中
+  margin: 0 auto;
+  transform: translateX(-50%);
+
+  // width 搭 height 受 js 控制
+
+  border-radius: 500rem;
+  border-style: solid;
+  border-color: @loader-line-color @loader-line-color @loader-fill-color @loader-fill-color;
+
+  animation: loader @loader-speed linear;
+  animation-iteration-count: infinite;
+
+  box-shadow: 0px 0px 0px 1px transparent;
+
+  .loader.indeterminate > & {
+    animation-duration: @loader-indeterminate-speed;
+    animation-direction: reverse;
+  }
+}
+
+.loader-text {
+  width: auto;
+  height: auto;
+  text-align: center;
+  min-width: 100%;
+}
+
+@keyframes loader {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

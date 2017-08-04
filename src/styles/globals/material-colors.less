@@ -528,12 +528,15 @@
 
 .generate-material(@n, @i: 1) when (@i =< @n) {
   @color-name: extract(@material-colors, @i);
+
   .color-@{color-name} {
     color: @@color-name;
   }
+
   .bg-@{color-name} {
     background-color: @@color-name;
   }
+
   .generate-material(@n, @i + 1);
 }
 

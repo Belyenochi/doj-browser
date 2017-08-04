@@ -1,22 +1,52 @@
 
+/* box sizing */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* iPad Input Shadows */
+
+input[type="text"],
+input[type="email"],
+input[type="search"],
+input[type="password"] {
+  -webkit-appearance: none;
+  -moz-appearance: none; /* mobile firefox too! */
+}
+
+/* size */
+
 html,
 body {
   height: 100%;
 }
 
-html {
-  font-size: @emSize;
-}
-
 body {
   margin: 0px;
   padding: 0px;
-  overflow-x: @pageOverflowX;
-  min-width: @pageMinWidth;
-  background: @pageBackground;
-  font-family: @pageFont;
-  font-size: @fontSize;
-  line-height: @lineHeight;
-  color: @textColor;
-  font-smoothing: @fontSmoothing;
+  overflow-x: @page-overflow-x;
+  min-width: @page-min-width;
+  background: @page-background;
+}
+
+/* font */
+
+html {
+  font-size: @em-size;
+}
+
+body {
+  font-family: @font-family;
+  font-size: @font-size;
+  line-height: @line-height;
+  color: @text-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

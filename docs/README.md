@@ -22,13 +22,14 @@
 General: <!-- TBD -->
 
 - [ ] Loader
-  - [ ] mode: inverse
+  - [x] mode: indeterminate
+  - [ ] mode: inverted
 - [ ] Icon
 - [ ] Button
   - [ ] sub: Group
   - [ ] mode: icon
   - [ ] mode: loading
-  - [ ] mode: inverse
+  - [ ] mode: inverted
   - [ ] mode: disabled
   - [ ] prop: size
   - [ ] prop: shape
@@ -79,7 +80,7 @@ Navigation:
   - [ ] mode: inline
   - [ ] mode: vertical
   - [ ] mode: horizontal
-  - [ ] mode: inverse
+  - [ ] mode: inverted
 - [ ] Pagination
   - [ ] sub: SizeChanger
   - [ ] sub: QuickJumper
